@@ -109,6 +109,10 @@ header ul li a:hover{
     justify-content: center;
     align-items: center;
     margin-bottom: 25px;
+    margin-top: 0px;
+    background-color: #00000046;
+    border-radius: 10px;
+    padding: 0px;
 }
 
 .about .aboutcontent{
@@ -116,16 +120,15 @@ header ul li a:hover{
     color: #bababa;
     text-shadow: 0 0 100px black;
     font-weight: 700;
-   
     text-align: center;
-    
+    padding: 0px;
 }
 
 .about .aboutcontent h1{
     color: #f0ba3b;
     font-size: 30px;
-    text-shadow: 0 0 100px black;
     font-weight: 700;
+    margin: 0px;
 }
 
 .Store .Storecontent{
