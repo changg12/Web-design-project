@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chans Game review</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    .slider {
+      position: relative;
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+    video {
+      width: 100%;
+      display: block;
+    }
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+    .prev {
+      left: 10px;
+    }
+    .next {
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay loop muted class="video-background">
+    <source src="Intro cinematic.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <header>
+    <a href="#" class="logo">Chans Game review</a>
+    <ul class="nav">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Store</a></li>
+      <li><a href="#">Reviews</a></li>
+    </ul>
+  </header>
+  <div class="banner">
+    <div class="teaser">
+      <div class="content">
+        <h2>Democracy<br> Freedom<br> Liberty</h2>
+        <p>Fight for freedom across a hostile galaxy in this frenetic third-person co-operative team shooter</p>
+        <p>Do you believe in freedom? Can you stand in the face of oppression – and defend the defenceless? Wage war for peace. Die for democracy. Join forces with up to three friends and wreak havoc on an alien scourge threatening the safety of your home planet, Super Earth, in this multiplayer co-op shooter for PS5 and PC from Arrowhead Game Studios. Step into the boots of the Helldivers, an elite class of soldiers whose mission is to spread peace, liberty and Managed Democracy using the biggest, baddest and most explosive tools in the galaxy. Helldivers don't go planet side without proper backup, but it’s up to you to decide how and when to call it in. Not only do you have a host of superpowered primary weapons and customizable loadouts, you also have the ability to call on stratagems during play. Helldivers 2 features Arrowhead's best cooperative gameplay yet. Collaboration will be vital: Teams will synergize on loadouts, strategize their approach for each mission and complete objectives together. Enlist in Super Earth’s premier military peacekeeping force today. We are heroes… we are legends… WE ARE HELLDIVERS.</p>
+      </div>
+      <div class="slider">
+        <div class="slides">
+          <div class="slide"><video src="Helldiver 2.mp4"></video></div>
+          <div class="slide"><video src="video2.mp4"></video></div>
+          <div class="slide"><video src="video3.mp4"></video></div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button> 
+      </div>
+    </div>
+  </div>
+  <div class="about">
+    <div class="aboutcontent">
+      <h1>Fight for Super Earth! Freedom. Peace. Managed Democracy. Your Super Earth-born rights.</h1>
+      <h2>The key pillars of our civilization are under attack from deadly alien creatures conspiring to destroy your planet and its values. The Helldivers must take on the role of peacekeepers in this Galactic War and protect their home planet, spread the message of Democracy and repel the hostiles by force.</h2>
+    </div>
+  </div>
+  <div class="Reviews">
+    <div class="Reviewscontent">
+      <img width="700" src="Helldiver 2 armor review.jpg">
+      <img width="700" src="Helldiver 2 armor review 2.jpg">
+    </div>
+  </div>
+  <div class="Store">
+    <div class="Storecontent">
+      <h1>Feeling patriotic? Ready to spread the message of Democracy? Join the Helldivers. At available stores</h1>
+      <h2>Steam store<img width="200" src="Steam store.jpg"></h2>
+      <h3>Playstation store<img width="200" src="Playstation store.jpg"></h3>
+    </div>
+  </div>
+  <div class="AvailablityRegion">
+    <div class="AvailablityRegioncontent">
+      <h1>Available Regions</h1>
+    </div>
+    <div class="AvailablityRegioncontentPicture">
+      <img width="700" src="Helldiver 2 availability.jpg">
+    </div>
+  </div>
+  <script>
+    let currentSlide = 0;
+
+    function changeSlide(direction) {
+      const slides = document.querySelectorAll('.slide');
+      currentSlide = (currentSlide + direction + slides.length) % slides.length;
+      document.querySelector('.slides').style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+  </script>
+</body>
+</html>

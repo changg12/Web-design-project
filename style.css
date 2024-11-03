@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'Squares Bold';
+    src: url('Squares Bold Free.otf');
+    font-weight: bold;
+  }
+*{
+    font-family: 'Squares Bold';
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('banner card.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60px;
+    width: 100%;
+    transition: 0.5s;
+    z-index: 1000;
+}
+header .logo {
+    position: relative;
+    color:#f0ba3b;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin: 10px;
+}
+header ul li a{
+    color: #f0ba3b;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+header ul li a:hover{
+    background-color: #fa6161;
+    color: black;
+    box-shadow: 0 0 10px #fa6161;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: auto;
+}
+.banner .teaser{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .teaser .content{
+    width: 50%;
+    height: 100%;
+    margin: 0 100px;
+}
+.banner .teaser .content h2{
+    font-size: 2em;
+    color: #f0ba3b;
+    text-shadow: 0 0 100px black;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+.banner .teaser .content p{
+    color: #bababa;
+    text-shadow: 0 0 100px black;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.Reviews .Reviewscontent{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    text-align: right;
+    display: flex;
+}
+
+.Reviews .Reviewscontent img{
+    display: flex;
+    margin-right: auto;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.about .aboutcontent{
+    text-align: left;
+    color: #bababa;
+    text-shadow: 0 0 100px black;
+    font-weight: 700;
+}
+
+.about .aboutcontent h1{
+    color: #f0ba3b;
+    font-size: 30px;
+    text-shadow: 0 0 100px black;
+    font-weight: 700;
+}
+
+.Store .Storecontent{
+    text-align: left;
+    display: flex;
+}
+
+.Store .Storecontent h1{
+    color: #f0ba3b;
+    font-size: 30px;
+    text-shadow: 0 0 100px black;
+    font-weight: 700;
+}
+
+.Store .Storecontent h2{
+    color: #bababa;
+    text-shadow: 0 0 100px black;
+    font-weight: 700;
+}
+
+.Store .Storecontent h3{
+    color: #bababa;
+    text-shadow: 0 0 100px black;
+    font-weight: 700;
+}
+
+.AvailablityRegion .AvailablityRegioncontent{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.AvailablityRegion .AvailablityRegioncontent h1{
+    color: #f0ba3b;
+    font-size: 30px;
+    text-shadow: 0 0 100px black;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.AvailablityRegion .AvailablityRegioncontentPicture{
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
+}
