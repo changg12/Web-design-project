@@ -6,6 +6,9 @@
 *{
     font-family: 'Squares Bold';
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 header{
     position: fixed;
@@ -31,12 +34,14 @@ header .logo {
     text-decoration: none;
     font-size: 2em;
     font-weight: 700;
+    margin-left: 1.5ch;
 }
 
 header .nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 3ch;
 }
 header ul li{
     list-style: none;
@@ -52,6 +57,7 @@ header ul li a:hover{
     background-color: #fa6161;
     color: black;
     box-shadow: 0 0 10px #fa6161;
+    transition: all 0.18s ease-in;
 }
 .banner{
     position: relative;
@@ -89,18 +95,14 @@ header ul li a:hover{
 }
 
 .Reviews .Reviewscontent{
-    position: relative;
     width: 100%;
     height: 50%;
-    align-items: center;
-    text-align: right;
     display: flex;
+    justify-content: center;
+    gap: 3.5em;
 }
 
-.Reviews .Reviewscontent img{
-    display: flex;
-    margin-right: auto;
-}
+
 
 .about {
     display: flex;
@@ -110,10 +112,13 @@ header ul li a:hover{
 }
 
 .about .aboutcontent{
-    text-align: left;
+
     color: #bababa;
     text-shadow: 0 0 100px black;
     font-weight: 700;
+   
+    text-align: center;
+    
 }
 
 .about .aboutcontent h1{
