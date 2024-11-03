@@ -226,3 +226,10 @@ header ul li a:hover{
   .next {
     right: 10px;
   }
+
+  .about:hover {
+    background-color: #000000c5;
+    transition: all 0.18s ease-in;
+  }
+
+  
