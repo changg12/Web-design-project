@@ -70,12 +70,9 @@ header ul li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap:3.5em;
 }
-.banner .teaser .content{
-    width: 50%;
-    height: 100%;
-    margin: 0 100px;
-}
+
 .banner .teaser .content h2{
     font-size: 2em;
     color: #f0ba3b;
@@ -169,4 +166,13 @@ header ul li a:hover{
     justify-content: center;
     align-items: center;
     margin-left: 500px;
+}
+.content{
+    background-color: #00000046;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    width: 50%;
+    height: 100%;
 }
