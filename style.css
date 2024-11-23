@@ -233,3 +233,31 @@ header ul li a:hover{
     transition: all 0.18s ease-in;
   }
 
+  .Whatiscontents {
+    background-color: #00000046;
+    text-align: center;
+  }
+
+  .Whatiscontents h1{
+    color: #f0ba3b;
+    font-size: 30px;
+    text-shadow: 0 0 100px black;
+    font-weight: 700;
+  }
+
+  .Whatiscontents h2{
+    color: #bababa;
+    text-shadow: 0 0 100px black;
+    font-weight: 700;
+  }
+
+  .Whatiscontents h3{
+    color: #bababa;
+    text-shadow: 0 0 100px black;
+    font-weight: 700;
+    font-size: 1.5em;
+  }
+  .Whatiscontents:hover {
+    background-color: #000000c5;
+    transition: all 0.18s ease-in;
+  }
