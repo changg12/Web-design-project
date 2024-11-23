@@ -275,3 +275,30 @@ header ul li a:hover{
     align-items: center;
     display: grid;
   }
+
+  .Whatiscontent2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000046;
+  }
+
+  .Whatiscontents2 {
+    text-align: center;
+  }
+
+  .Whatiscontents2 h1{
+    color: #f0ba3b;
+    text-shadow: 0 0 100px black;
+    font-size: 30px;
+  }
+
+  .Whatiscontents2 h2{
+    color: #bababa;
+    text-shadow: 0 0 100px black;
+  }
+
+  .Whatiscontent2:hover {
+    background-color: #000000c5;
+    transition: all 0.18s ease-in;
+  }
