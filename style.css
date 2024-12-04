@@ -102,7 +102,11 @@ header ul li a:hover{
     gap: 1.5em;
 }
 
-
+.Reviewscontentvid {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 
 .about {
     display: flex;
