@@ -9,7 +9,9 @@
 html {
     scroll-behavior: smooth;
   }
+  
 
+  
 header{
     position: fixed;
     top: 0;
@@ -96,10 +98,10 @@ header ul li a:hover{
 
 .Reviews .Reviewscontent{
     width: 100%;
-    height: 100%;
+    height: 50%;
     display: flex;
     justify-content: center;
-    gap: 1.5em;
+    gap: 3.5em;
 }
 
 .Reviewscontentvid {
@@ -238,6 +240,7 @@ header ul li a:hover{
   }
 
   .Whatiscontents {
+    background-color: #00000046;
     text-align: center;
   }
 
@@ -260,12 +263,16 @@ header ul li a:hover{
     font-weight: 700;
     font-size: 1.5em;
   }
+  .Whatiscontents:hover {
+    background-color: #000000c5;
+    transition: all 0.18s ease-in;
+  }
 
   .WhatiscontentsPicture img{
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
-    margin-left: 350px;
+    margin-left: 500px;
     align-items: center;
     display: grid;
   }
@@ -300,6 +307,37 @@ header ul li a:hover{
     background-color: #000000c5;
     transition: all 0.18s ease-in;
   }
+  #post{
+    margin-top: 20px;
+    margin-left: 50%;
+    padding-bottom: 100px;
+  }
+  #post h3{
+    margin: 0px;
+    color: cornflowerblue;
+    margin-left: 8%;
+  }
+  #post-form input {
+    display: block; 
+    
+    
+   
+}
+#post-form input[name="comment"] {
+  display: block; 
+  width: 30%;
+  height: 5em;
+}
+
+#post-form input[type="button"] {
+  display: block; 
+  
+  
+}
+#post-status {
+  margin-top: 10px;
+  color: greenyellow;
+}
 
   .Whatiscontents2Picture {
     align-items: center;
