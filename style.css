@@ -334,3 +334,25 @@ header ul li a:hover{
   margin-top: 10px;
   color: greenyellow;
 }
+
+  .Whatiscontents2Picture {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+  }
+  .Whatiscontents3Picture {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+  }
+
+  .Whatiscontent {
+    background-color: #00000046;
+  }
+
+  .Whatiscontent:hover {
+    background-color: #000000c5;
+    transition: all 0.18s ease-in;
+  }
