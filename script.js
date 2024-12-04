@@ -1,30 +1,30 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const input = document.querySelector('#input');
+    const input = document.querySelector('input');
     const targetWords = ["Democracy", "Store", "Freedom", "Availability", "Zone", "Weapon"];
-    const elements = document.querySelectorAll('*');
+    const elements = Array.from(document.querySelectorAll('*'));
 
     input.addEventListener('keydown', (event) => {
         if (event.key === 'Enter') {
             const targetContent = event.target.value.trim().toLowerCase();
+            console.log(targetContent);
             let matchFound = false;
 
-            elements.forEach((element) => {
-                const elementText = element.textContent.toLowerCase();
-                targetWords.forEach((word) => {
-                    if (elementText.includes(word.toLowerCase()) && targetContent === word.toLowerCase()) {
-                        matchFound = true;
-                        element.scrollIntoView({ behavior: "smooth", block: "center" });
-                    }
-                });
+            targetWords.forEach(word => {
+                if (word.toLowerCase() === targetContent) {
+                    matchFound = true;
+                    elements.forEach(element => {
+                        const elementText = element.textContent ? element.textContent.toLowerCase() : '';
+                        if (elementText.includes(word.toLowerCase())) {
+                            element.scrollIntoView({ behavior: "smooth", block: "center" });
+                            console.log(`Scrolled to: ${word}`);
+                        }
+                    });
+                }
             });
 
-            if (matchFound) {
-                console.log("Match found and scrolled to.");
-            } else {
+            if (!matchFound) {
                 console.log("No match found.");
             }
-
-            event.target.value = '';
         }
     });
 
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Comment:", comment);
         const myDiv = document.getElementById("post-status");
         const newParagraph = document.createElement('p');
-        newParagraph.textContent = `added title: ${title} comment: ${comment}`;
+        newParagraph.textContent = `Added title: ${title}, comment: ${comment}`;
         myDiv.appendChild(newParagraph);
 
         setTimeout(() => {
