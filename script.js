@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const input = document.querySelector('input');
-    const targetWords = ["Democracy", "Store", "Freedom", "Availability", "Zone", "Weapon"];
+    const targetWords = ["Democracy", "Store", "Freedom", "Availability", "Zone", "Weapon", "armory", "factions"];
     const elements = Array.from(document.querySelectorAll('*'));
 
     input.addEventListener('keydown', (event) => {

@@ -33,7 +33,10 @@
             <ul class="nav">
                 <li><a href="#">About</a></li>
                 <li><a href="#store">Store</a></li>
-                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#post">Reviews</a></li>
+                <li><a href="#GalacticWar">Galactic War</a></li>
+                <li><a href="#armory">Armory</a></li>
+                <li><a href="#factions">Factions</a></li>
                 <input type="text" placeholder="Search.." id="input">
             </ul>
         </header>
@@ -68,7 +71,7 @@
                   </div>
             </div>
         </div> 
-        <div class="Whatiscontent">
+        <div class="Whatiscontent" id = "GalacticWar">
             <div class="Whatiscontents">
                 <h1>What is Helldivers 2?</h1>
                 <h2>Fight for freedom across a hostile galaxy in this frenetic third-person co-operative team shooter</h2>
@@ -81,7 +84,7 @@
                 <img width="1000" src="Hint3.jpg">
             </div>
         </div>
-        <div class="Whatiscontent2">
+        <div class="Whatiscontent2" id = "armory">
             <div class="Whatiscontents2">
                 <h1>Wield overpowered weapons!</h1>
                 <h2>Decide how to take down each enemy surge using a multitude of offensive and defensive tools. 
@@ -99,13 +102,13 @@
         </div>
         <div class="about">
             <div class="aboutcontent">
-                <h2><h1 class="title_1" id="reviews">Fight for Super Earth!
+                <h2><h1 class="title_1">Fight for Super Earth!
                     Freedom. Peace. Managed Democracy. Your Super Earth-born rights.</h1> The key pillars of our civilization are under attack from deadly alien creatures conspiring to destroy your planet and its values.
                     
                     The Helldivers must take on the role of peacekeepers in this Galactic War and protect their home planet, spread the message of Democracy and repel the hostiles by force.</h2>
             </div>
         </div>
-        <div class="Reviews" >
+        <div class="Reviews" id = "factions">
             <div class="Reviewscontent">
                 <img width="800" src="Terminid2.jpg">
                 <img width="800" src="Terminid3.jpg">
@@ -115,13 +118,30 @@
             </div>
         </div>
 
+        <div class="Automaton">
+            <div class="Automatoncontent">
+                <h1>The Automaton Collective</h1>
+                <h2>The Automatons are mindless, bloodthirsty robots, coded for nothing but murder and socialist violence. Their origins are a mystery, but their unthinking hatred of Freedom makes them a threat to all citizens of Super Earth.</h2>
+            </div>
+            <div class="AutomatoncontentPicture">
+                <img width="800" src="Automaton2.jpg">
+                <img width="800" src="Automaton3.jpg">
+            </div>
+            <div class="AutomatoncontentVideo">
+                <video width="800" src="Vernen Wells II - HELLDIVERS 2 Cinematic - Trim.mp4" controls autoplay loop muted></video>
+            </div>
+        </div>
+
         <div class="Store" id="store">
             <div class="Storecontent" >
                 <h1>Feeling patriotic? Ready to spread the message of Democracy? Join the Helldivers. At available stores</h1>
-                <h2>Steam store<img width="200" src="Steam store.jpg"></h2>
-                <h3>Playstation store<img width="200" src="Playstation store.jpg"></h3>
+            </div>
+            <div class="StorecontentPicture">
+                <h2>Steam store<img width="800" src="Steam store.jpg"></h2>
+                <h3>Playstation store<img width="500" src="Playstation store.jpg"></h3>
             </div>
         </div>
+
         <div class="AvailablityRegion">
             <div class="AvailablityRegioncontent">
                 <h1>Available Regions</h1>
@@ -130,7 +150,7 @@
                 <img width="700" src="Helldiver 2 availability.jpg">
             </div>
         </div>
-        <!-- POST -->
+        <!-- Text box -->
          <div id="post">
             <h3>post</h3>
         <form id="post-form" >
@@ -140,9 +160,6 @@
         </form>
         <div id="post-status"></div>
         </div>
-
-
-
 
 
         <script>
@@ -157,5 +174,7 @@
               document.querySelector('.slides').style.transform = `translateX(-${currentSlide * 100}%)`;
             }
           </script>
+
+
     </body>
 </html>

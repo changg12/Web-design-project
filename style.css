@@ -96,18 +96,31 @@ header ul li a:hover{
     letter-spacing: 1px;
 }
 
+.Reviews{
+  background-color: #00000046;
+}
+
+.Reviews:hover{
+    background-color: #000000c5;
+    transition: all 0.18s ease-in;
+}
+
 .Reviews .Reviewscontent{
     width: 100%;
-    height: 50%;
+    height: 100%;
     display: flex;
     justify-content: center;
-    gap: 3.5em;
+    gap: 1.5em;
 }
 
 .Reviewscontentvid {
   justify-content: center;
   align-items: center;
   display: flex;
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 50px;
 }
 
 .about {
@@ -115,7 +128,7 @@ header ul li a:hover{
     justify-content: center;
     align-items: center;
     margin-bottom: 25px;
-    margin-top: 0px;
+    margin-top: 50px;
     background-color: #00000046;
     border-radius: 10px;
     padding: 0px;
@@ -137,28 +150,14 @@ header ul li a:hover{
     margin: 0px;
 }
 
-.Store .Storecontent{
-    text-align: left;
-    display: flex;
+.AvailablityRegion{
+  margin-top: 50px;
+  background-color: #00000046;
 }
 
-.Store .Storecontent h1{
-    color: #f0ba3b;
-    font-size: 30px;
-    text-shadow: 0 0 100px black;
-    font-weight: 700;
-}
-
-.Store .Storecontent h2{
-    color: #bababa;
-    text-shadow: 0 0 100px black;
-    font-weight: 700;
-}
-
-.Store .Storecontent h3{
-    color: #bababa;
-    text-shadow: 0 0 100px black;
-    font-weight: 700;
+.AvailablityRegion:hover{
+    background-color: #000000c5;
+    transition: all 0.18s ease-in;
 }
 
 .AvailablityRegion .AvailablityRegioncontent{
@@ -272,7 +271,7 @@ header ul li a:hover{
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
-    margin-left: 500px;
+    margin-left: 350px;
     align-items: center;
     display: grid;
   }
@@ -286,6 +285,7 @@ header ul li a:hover{
     justify-content: center;
     align-items: center;
     background-color: #00000046;
+    margin-top: 50px;
   }
 
   .Whatiscontents2 {
@@ -319,9 +319,6 @@ header ul li a:hover{
   }
   #post-form input {
     display: block; 
-    
-    
-   
 }
 #post-form input[name="comment"] {
   display: block; 
@@ -331,8 +328,6 @@ header ul li a:hover{
 
 #post-form input[type="button"] {
   display: block; 
-  
-  
 }
 #post-status {
   margin-top: 10px;
@@ -360,3 +355,60 @@ header ul li a:hover{
     background-color: #000000c5;
     transition: all 0.18s ease-in;
   }
+
+.Automaton {
+  margin-top: 50px;
+  background-color: #00000046;
+}
+
+.Automatoncontent {
+  text-align: center;
+}
+
+.Automatoncontent h1{
+  color: #f0ba3b;
+  font-size: 30px;
+}
+
+.Automatoncontent h2{
+  color: #bababa;
+}
+
+.Automaton:hover {
+  background-color: #000000c5;
+  transition: all 0.18s ease-in;
+}
+
+.AutomatoncontentPicture {
+    justify-content: center;
+    gap: 1.5em;
+    display: flex;
+}
+
+.AutomatoncontentVideo {
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+}
+
+.StorecontentPicture {
+  justify-content: center;
+  display: flex;
+  margin-left: 100px;
+  color: #bababa;
+}
+
+.Storecontent{
+  text-align: center;
+  color: #f0ba3b;
+}
+
+.Store{
+  background-color: #00000046;
+  margin-top: 50px;
+}
+
+.Store:hover {
+  background-color: #000000c5;
+  transition: all 0.18s ease-in;
+}
