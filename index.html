@@ -6,6 +6,7 @@
         <title>Chans Game review</title>
         <link rel="stylesheet" href="style.css" >
         <script src="script.js"></script>
+        
     </head>
     <style>
         body, html {
@@ -122,7 +123,25 @@
                 <img width="700" src="Helldiver 2 availability.jpg">
             </div>
         </div>
+        <!-- POST -->
+         <div id="post">
+            <h3>post</h3>
+        <form id="post-form" >
+            <input placeholder="Title" type="text" name="title">
+            <input placeholder="Comment" type="text" name="comment">
+            <input type="button" onclick="sendFrom(event)" value="Submit form">
+        </form>
+        <div id="post-status"></div>
+        </div>
+
+
+
+
+
         <script>
+            // for form function
+        
+
             let currentSlide = 0;
         
             function changeSlide(direction) {
